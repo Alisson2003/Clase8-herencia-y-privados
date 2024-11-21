@@ -1,8 +1,8 @@
 public class estudianteDeportista extends Estudiante{
     String deporte;
 
-    public estudianteDeportista(String cedula, String nombre, String fechaNacimiento, String tipoSangre, int codigo, String deporte) {
-        super(cedula, nombre, fechaNacimiento, tipoSangre, codigo);
+    public estudianteDeportista(String cedula, String nombre, String fechaNacimiento, String tipoSangre, String direccion, int codigo, String deporte) {
+        super(cedula, nombre, fechaNacimiento, tipoSangre, direccion, codigo);
         this.deporte = deporte;
     }
 

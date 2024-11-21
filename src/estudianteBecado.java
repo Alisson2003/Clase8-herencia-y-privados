@@ -2,8 +2,8 @@ public class estudianteBecado extends Estudiante{
 
     String tipoBeca;
 
-    public estudianteBecado(String cedula, String nombre, String fechaNacimiento, String tipoSangre, int codigo, String tipoBeca) {
-        super(cedula, nombre, fechaNacimiento, tipoSangre, codigo);
+    public estudianteBecado(String cedula, String nombre, String fechaNacimiento, String tipoSangre, String direccion, int codigo, String tipoBeca) {
+        super(cedula, nombre, fechaNacimiento, tipoSangre, direccion, codigo);
         this.tipoBeca = tipoBeca;
     }
 

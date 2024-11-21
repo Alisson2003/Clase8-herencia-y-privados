@@ -1,18 +1,22 @@
+import java.util.Scanner;
+
 public class Persona {
     private String cedula;
     private String nombre;
     private String fechaNacimiento;
     private String tipoSangre;
+    private String direccion;
 
     public Persona() {
 
     }
 
-    public Persona(String cedula, String nombre, String fechaNacimiento, String tipoSangre) {
+    public Persona(String cedula, String nombre, String fechaNacimiento, String tipoSangre, String direccion) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.tipoSangre = tipoSangre;
+        this.direccion = direccion;
     }
 
     public String getCedula() {
@@ -47,6 +51,14 @@ public class Persona {
         this.tipoSangre = tipoSangre;
     }
 
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
     void imprimir() {
 
         System.out.println("°Los datos de la persona es: ");
@@ -61,6 +73,55 @@ public class Persona {
 
         System.out.println("Tipo de Sangre: " + tipoSangre);
         //System.out.println("Tipo de Sangre: " + getTipoSangre());
+
+        System.out.println("Direccion: " + direccion);
+
+    }
+
+    public void cambiarDatos() {
+        //primer parametro
+        /*
+        cedula = cedula;
+        nombre = nombre;
+        fechaNacimiento = fechaNacimiento;
+        tipoSangre = tipoSangre;
+        direccion = direccion;
+         */
+
+        /*
+        //segundo parametro
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.fechaNacimiento = fechaNacimiento;
+        this.tipoSangre = tipoSangre;
+        this.direccion = direccion;
+        */
+
+        //tercero parametro
+
+        /*
+        Scanner sc = new Scanner(System.in);
+
+        String cedula = sc.nextLine();
+        String nombre = sc.nextLine();
+        String fechaNacimiento = sc.nextLine();
+        String tipoSangre = sc.nextLine();
+        String direccion = sc.nextLine();
+        setCedula(cedula);
+        setNombre(nombre);
+        setFechaNacimiento(fechaNacimiento);
+        setTipoSangre(tipoSangre);
+        setDireccion(direccion);
+        */
+
+        //cuarto parametro
+
+         Scanner sc = new Scanner(System.in);
+         this.cedula = sc.nextLine();
+         this.nombre = sc.nextLine();
+         this.fechaNacimiento = sc.nextLine();
+         this.tipoSangre = sc.nextLine();
+         this.direccion = sc.nextLine();
 
     }
 }
